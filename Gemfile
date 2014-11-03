@@ -4,6 +4,7 @@ gemspec
 
 group :test do
   gem 'rspec-rails'
-  gem 'resque_spec'
   gem 'spring-commands-rspec'
+  gem 'factory_girl_rails'
+  gem 'mysql2'
 end

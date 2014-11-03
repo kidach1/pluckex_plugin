@@ -7,7 +7,7 @@ require "pluckex/version"
 Gem::Specification.new do |s|
   s.name        = "pluckex"
   s.version     = Pluckex::VERSION
-  s.authors     = ["kidachi!"]
+  s.authors     = ["kidachi_"]
   s.email       = ["t.daiki50@gmail.com"]
   s.homepage    = ""
   s.summary     = "Pluckex"
@@ -17,6 +17,4 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
   s.add_dependency "rails", ">= 4.0.0"
-
-  s.add_development_dependency "sqlite3"
 end
