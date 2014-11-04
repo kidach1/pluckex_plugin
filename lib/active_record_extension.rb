@@ -9,9 +9,9 @@ module ActiveRecord
         Hash[*self.pluck(*col_names).flatten]
       end
 
-      #   Person.pluck_with_names(:id, :name)
+      #   Person.pluck_with_keys(:id, :name)
       #   # => [{:id=>1, :name=>'David'}, {:id=>2, :name=>'Jeremy'}, {:id=>3, :name=>'Jose'}]
-      def pluck_with_names(*col_names)
+      def pluck_with_keys(*col_names)
         self.pluck(*col_names).map do |element|
           hash = {}
           col_names.map.with_index do |col, i|

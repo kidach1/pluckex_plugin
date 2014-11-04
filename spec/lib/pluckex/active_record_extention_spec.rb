@@ -13,8 +13,8 @@ RSpec.describe 'lib/active_record_extension' do
         )
       end
     end
-    describe 'pluck_with_names' do
-      subject { Mock::Person.pluck_with_names(:id, :name) }
+    describe 'pluck_with_keys' do
+      subject { Mock::Person.pluck_with_keys(:id, :name) }
       it do
         expect(subject).to eq([
           {:id => persons.first.id, :name => persons.first.name},

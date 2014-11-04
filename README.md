@@ -12,10 +12,10 @@ Like this.
       #   Person.pluck_tied_by_id(:name)
       #   # => {1=>'David', 2=>'Jeremy', 3=>'Jose'}
 ```
-### pluck_with_names
+### pluck_with_keys
 
 ```
-      #   Person.pluck_with_names(:id, :name)
+      #   Person.pluck_with_keys(:id, :name)
       #   # => [{:id=>1, :name=>'David'}, {:id=>2, :name=>'Jeremy'}, {:id=>3, :name=>'Jose'}]
 ```
 
